@@ -221,20 +221,14 @@ body {
     0% {
         transform: translateX(100%) scale(1) rotate(0deg);
     }
-    15% {
+    25% {
         transform: translateX(100%) scale(1.1) rotate(5deg);
     }
-    25% {
+    50% {
         transform: translateX(100%) scale(1) rotate(0deg);
     }
-    40% {
-        transform: translateX(100%) scale(1) rotate(0deg);
-    }
-    55% {
+    75% {
         transform: translateX(100%) scale(1.1) rotate(-5deg);
-    }
-    65% {
-        transform: translateX(100%) scale(1) rotate(0deg);
     }
     100% {
         transform: translateX(100%) scale(1) rotate(0deg);
