@@ -22,8 +22,8 @@ body {
     height: 100vw;
     overflow: hidden;
     position: relative;
-    font-size: 1.9vw;
-    line-height: 1.9vw;
+    font-size: 1.8vw;
+    line-height: 1.8vw;
 }
 
 .yellow {
@@ -63,28 +63,48 @@ body {
     text-align: center;
 }
 
+.header-bg-circle  {
+    position: relative;
+    display: inline-block;
+    /* filter: drop-shadow(10px 10px 0px rgba(28, 41, 60, 1)); */
+}
+
+.header-bg-circle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -16%;
+    left: -10%;
+    width: 120%;
+    height: 115%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #a1433c;
+}
+
 .subtitle {
     position: relative;
     width: min-content;
     font-size: 2.34vw;
     margin-bottom: 0.2vw;
+    white-space: nowrap;
 }
 
-.gong-kong-title {
+.waffle-title {
     position: relative;
     font-size: 2.34vw;
     letter-spacing: -0.17vw;
     margin-bottom: 0.2vw;
 }
 
-.gong-kong-price {
+.waffle-price {
     position: absolute;
     top: 0;
     right: -11vw;
     transform: translateX(100%);
 }
 
-.gong-kong-title:before {
+.waffle-title:before {
     content: '';
     display: block;
     position: absolute;
@@ -97,7 +117,7 @@ body {
     background-color: #a1433c;
 }
 /* Гонконгская вафля */
-.gong-kong {
+.waffle {
     top: 14.5vw;
     left: 7.7vw;
 }
@@ -143,8 +163,20 @@ body {
 
 /* Кофе и Какао */
 .coffee {
-    top: 11vw;
+    top: 13vw;
     left: 59.6vw;
+}
+
+.coffee-size-title {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0.2vw;
+    font-size: 1.1vw;
+}
+
+.coffee-size-title-item + .coffee-size-title-item {
+    margin-left: 2.3vw;
 }
 
 .coffee-items {
@@ -161,7 +193,7 @@ body {
 }
 
 .coffee-item + .coffee-item {
-    margin-top: 0.2vw;
+    margin-top: 0.4vw;
 }
 
 .dots {
@@ -204,7 +236,7 @@ body {
 
 /* Чай */
 .tea {
-    top: 28vw;
+    top: 30.5vw;
     left: 59.6vw;
 }
 
@@ -212,6 +244,11 @@ body {
     display: inline-block;
     position: relative;
     margin-right: 0.5vw;
+}
+
+.bg-circle-big, .bg-circle {
+    position: relative;
+    display: inline-block;
 }
 
 .bg-circle:before {
@@ -242,13 +279,13 @@ body {
 
 /* Милкшейк */
 .milkshake {
-    top: 34vw;
+    top: 34.5vw;
     left: 59.6vw;
 }
 
 /* Мороженое отдельно */
 .extra-ice {
-    top: 43vw;
+    top: 43.2vw;
     left: 59.6vw;
 }
 
