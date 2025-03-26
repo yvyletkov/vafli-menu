@@ -64,24 +64,50 @@ body {
 }
 
 .subtitle {
+    position: relative;
+    width: min-content;
     font-size: 2.34vw;
+    margin-bottom: 0.2vw;
 }
 
 .gong-kong-title {
+    position: relative;
     font-size: 2.34vw;
     letter-spacing: -0.17vw;
+    margin-bottom: 0.2vw;
+}
+
+.gong-kong-price {
+    position: absolute;
+    top: 0;
+    right: -11vw;
+    transform: translateX(100%);
+}
+
+.gong-kong-title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -41%;
+    left: -8%;
+    width: 120%;
+    height: 165%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #a1433c;
 }
 /* Гонконгская вафля */
 .gong-kong {
-    top: 12vw;
+    top: 14.5vw;
     left: 7.7vw;
 }
 
-
-
 .price {
-    margin-top: 1vw;
-    font-weight: bold;
+    margin-top: 0.4vw;
+    padding: 0.11vw;
+    color: #1c293c;
+    background-color: #fff;
+    width: fit-content;
 }
 
 /* Мороженое */
@@ -120,10 +146,98 @@ body {
     top: 11vw;
     left: 59.6vw;
 }
+
+.coffee-items {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+}
+
+.coffee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.coffee-item + .coffee-item {
+    margin-top: 0.2vw;
+}
+
+.dots {
+    border-bottom: 0.3vw dotted #fff;
+    flex-grow: 1;
+    margin: 0.4vw 0.4vw;
+}
+
+.drink-name {
+    text-align: left;
+    width: min-content;
+    white-space: nowrap;
+}
+
+.prices {
+    display: flex;
+    gap: 1vw;
+}
+
+.price-item {
+    text-align: right;
+}
+
+.price-item.right {
+    width: 4.7vw;
+    position: relative;
+}
+
+.price-item.right::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -0.4vw;
+    top: -1.5vw;
+    width: 0.1vw;
+    height: 3.5vw;
+    background-color: #fff;
+    margin-right: 0.4vw;
+}
+
 /* Чай */
 .tea {
     top: 28vw;
     left: 59.6vw;
+}
+
+.tea-title {
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5vw;
+}
+
+.bg-circle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: -20%;
+    width: 140%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #a1433c;
+}
+
+.bg-circle-big:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -32%;
+    left: -10%;
+    width: 120%;
+    height: 150%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: #a1433c;
 }
 
 /* Милкшейк */
@@ -136,4 +250,8 @@ body {
 .extra-ice {
     top: 43vw;
     left: 59.6vw;
+}
+
+.underline {
+    text-decoration: underline;
 }
