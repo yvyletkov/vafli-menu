@@ -112,11 +112,50 @@ body {
     font-size: 4.9vw;
     color: white;
     text-align: center;
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.7), 0 0 1vw rgba(255, 255, 255, 0.5);
+    animation: neonFlicker 3s infinite;
+}
+
+@keyframes neonFlicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: 0.99;
+        text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.7), 0 0 1vw rgba(255, 255, 255, 0.5), 0 0 2vw rgba(255, 255, 255, 0.4);
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 0.2vw #fff, 
+                 0 0 0.4vw #fff, 
+                 0 0 0.6vw #ffc060,
+                 0 0 0.8vw #ffc060,
+                 0 0 1vw #ffc060, 
+                 0 0 1.2vw #ffc060;
+    animation: neonBlueFlicker 5s infinite alternate;
+}
+
+@keyframes neonBlueFlicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 0.2vw #fff, 
+                     0 0 0.4vw #fff, 
+                     0 0 0.6vw #ffc060,
+                     0 0 0.8vw #ffc060,
+                     0 0 1vw #ffc060, 
+                     0 0 1.2vw #ffc060;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
 }
 
 .header-bg-circle  {
     position: relative;
     display: inline-block;
+    animation: neonRedFlicker 4s infinite;
     /* filter: drop-shadow(10px 10px 0px rgba(28, 41, 60, 1)); */
 }
 
@@ -131,6 +170,26 @@ body {
     z-index: -1;
     border-radius: 50%;
     background-color: #a1433c;
+    box-shadow: 0 0 0.8vw #ff3830, 0 0 1.5vw rgba(255, 56, 48, 0.7);
+    animation: redGlow 4s infinite;
+}
+
+@keyframes neonRedFlicker {
+    0%, 100% {
+        text-shadow: 0 0 0.3vw #fff, 0 0 0.6vw #fff, 0 0 1vw #ff3830, 0 0 1.5vw #ff3830;
+    }
+    50% {
+        text-shadow: 0 0 0.5vw #fff, 0 0 1vw #fff, 0 0 1.5vw #ff3830, 0 0 2vw #ff3830;
+    }
+}
+
+@keyframes redGlow {
+    0%, 100% {
+        box-shadow: 0 0 0.8vw #ff3830, 0 0 1.5vw rgba(255, 56, 48, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 1.2vw #ff3830, 0 0 2vw rgba(255, 56, 48, 0.8), 0 0 3vw rgba(255, 56, 48, 0.5);
+    }
 }
 
 .subtitle {
