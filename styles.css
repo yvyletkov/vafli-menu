@@ -110,7 +110,34 @@ body {
     right: 1.3vw;
     transform: translateX(100%);
     width: 13.2vw;
+    animation: waffleAnimation 4s infinite;
+    transform-origin: center center;
 }
+
+@keyframes waffleAnimation {
+    0% {
+        transform: translateX(100%) scale(1) rotate(0deg);
+    }
+    15% {
+        transform: translateX(100%) scale(1.1) rotate(5deg);
+    }
+    25% {
+        transform: translateX(100%) scale(1) rotate(0deg);
+    }
+    40% {
+        transform: translateX(100%) scale(1) rotate(0deg);
+    }
+    55% {
+        transform: translateX(100%) scale(1.1) rotate(-5deg);
+    }
+    65% {
+        transform: translateX(100%) scale(1) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100%) scale(1) rotate(0deg);
+    }
+}
+
 .waffle-price {
     position: absolute;
     top: -1vw;
