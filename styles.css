@@ -129,23 +129,23 @@ body {
 
 .neon-text {
     color: #fff;
-    text-shadow: 0 0 0.2vw #fff, 
-                 0 0 0.4vw #fff, 
-                 0 0 0.6vw #ffc060,
-                 0 0 0.8vw #ffc060,
-                 0 0 1vw #ffc060, 
-                 0 0 1.2vw #ffc060;
+    text-shadow: 0 0 0.1vw #fff, 
+                 0 0 0.2vw #fff, 
+                 0 0 0.3vw #ffc060,
+                 0 0 0.4vw #ffc060,
+                 0 0 0.5vw #ffc060, 
+                 0 0 0.6vw #ffc060;
     animation: neonBlueFlicker 5s infinite alternate;
 }
 
 @keyframes neonBlueFlicker {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow: 0 0 0.2vw #fff, 
-                     0 0 0.4vw #fff, 
-                     0 0 0.6vw #ffc060,
-                     0 0 0.8vw #ffc060,
-                     0 0 1vw #ffc060, 
-                     0 0 1.2vw #ffc060;
+        text-shadow: 0 0 0.1vw #fff, 
+                     0 0 0.2vw #fff, 
+                     0 0 0.3vw #ffc060,
+                     0 0 0.4vw #ffc060,
+                     0 0 0.5vw #ffc060, 
+                     0 0 0.6vw #ffc060;
     }
     20%, 24%, 55% {
         text-shadow: none;
@@ -170,25 +170,25 @@ body {
     z-index: -1;
     border-radius: 50%;
     background-color: #a1433c;
-    box-shadow: 0 0 0.8vw #ff3830, 0 0 1.5vw rgba(255, 56, 48, 0.7);
+    box-shadow: 0 0 0.4vw #ff3830, 0 0 0.8vw rgba(255, 56, 48, 0.7);
     animation: redGlow 4s infinite;
 }
 
 @keyframes neonRedFlicker {
     0%, 100% {
-        text-shadow: 0 0 0.3vw #fff, 0 0 0.6vw #fff, 0 0 1vw #ff3830, 0 0 1.5vw #ff3830;
+        text-shadow: 0 0 0.15vw #fff, 0 0 0.3vw #fff, 0 0 0.5vw #ff3830, 0 0 0.8vw #ff3830;
     }
     50% {
-        text-shadow: 0 0 0.5vw #fff, 0 0 1vw #fff, 0 0 1.5vw #ff3830, 0 0 2vw #ff3830;
+        text-shadow: 0 0 0.25vw #fff, 0 0 0.5vw #fff, 0 0 0.8vw #ff3830, 0 0 1vw #ff3830;
     }
 }
 
 @keyframes redGlow {
     0%, 100% {
-        box-shadow: 0 0 0.8vw #ff3830, 0 0 1.5vw rgba(255, 56, 48, 0.7);
+        box-shadow: 0 0 0.4vw #ff3830, 0 0 0.8vw rgba(255, 56, 48, 0.7);
     }
     50% {
-        box-shadow: 0 0 1.2vw #ff3830, 0 0 2vw rgba(255, 56, 48, 0.8), 0 0 3vw rgba(255, 56, 48, 0.5);
+        box-shadow: 0 0 0.6vw #ff3830, 0 0 1vw rgba(255, 56, 48, 0.8), 0 0 1.5vw rgba(255, 56, 48, 0.5);
     }
 }
 
