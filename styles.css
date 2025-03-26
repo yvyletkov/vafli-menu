@@ -1,3 +1,12 @@
+/* Подключение шрифта */
+@font-face {
+    font-family: 'Baloo';
+    src: url('./assets/baloo-cyrillic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Базовые стили */
 * {
     margin: 0;
@@ -6,33 +15,186 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    font-family: 'Baloo', 'Arial', sans-serif;
+    background-color: #1b2541;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
-/* Утилитарные классы в стиле Tailwind */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.items-center { align-items: center; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.text-center { text-align: center; }
-.mt-4 { margin-top: 1rem; }
-.mt-8 { margin-top: 2rem; }
-.mb-4 { margin-bottom: 1rem; }
-.mb-8 { margin-bottom: 2rem; }
-.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-.px-4 { padding-left: 1rem; padding-right: 1rem; }
-.rounded { border-radius: 0.25rem; }
-.bg-gray-100 { background-color: #f3f4f6; }
-.bg-blue-500 { background-color: #3b82f6; }
-.text-white { color: white; }
-.text-xl { font-size: 1.25rem; }
-.text-2xl { font-size: 1.5rem; }
-.font-bold { font-weight: 700; }
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Общие стили для блоков */
+.item {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2vh;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Заголовок */
+.header {
+    position: absolute;
+    top: 2vh;
+    left: 10vw;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 77, 77, 0.3);
+    border-radius: 15px;
+}
+
+.header h1 {
+    font-family: 'Baloo', sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Гонконгская вафля */
+.gong-kong {
+    top: 15vh;
+    left: 5vw;
+    width: 30vw;
+    height: 20vh;
+    background-color: rgba(128, 30, 30, 0.5);
+}
+
+.gong-kong h2 {
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.gong-kong p {
+    font-size: 1.8vh;
+}
+
+.price {
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+/* Мороженое */
+.icecream {
+    top: 38vh;
+    left: 5vw;
+    width: 25vw;
+    height: 30vh;
+}
+
+/* Топинги */
+.toppings {
+    top: 70vh;
+    left: 5vw;
+    width: 25vw;
+    height: 20vh;
+}
+
+/* Наполнители */
+.fillings {
+    top: 38vh;
+    left: 32vw;
+    width: 25vw;
+    height: 52vh;
+}
+
+/* Кофе и Какао */
+.coffee {
+    top: 15vh;
+    right: 5vw;
+    width: 35vw;
+    height: 35vh;
+    overflow: auto;
+}
+
+.coffee h2 {
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+    color: #ff8c69;
+}
+
+.coffee table {
+    width: 100%;
+    font-size: 1.8vh;
+}
+
+.coffee td {
+    padding: 0.5vh 0;
+}
+
+/* Чай */
+.tea {
+    top: 52vh;
+    right: 25vw;
+    width: 15vw;
+    height: 10vh;
+    background-color: rgba(128, 30, 30, 0.5);
+}
+
+/* Милкшейк */
+.milkshake {
+    top: 65vh;
+    right: 25vw;
+    width: 15vw;
+    height: 15vh;
+    background-color: rgba(128, 30, 30, 0.5);
+}
+
+/* Мороженое отдельно */
+.extra-ice {
+    top: 52vh;
+    right: 5vw;
+    width: 18vw;
+    height: 28vh;
+    background-color: rgba(128, 30, 30, 0.5);
+}
+
+/* Стили для списков */
+ul {
+    list-style-type: none;
+    padding-left: 1vw;
+    font-size: 1.7vh;
+}
+
+li {
+    margin-bottom: 0.5vh;
+}
+
+h3 {
+    font-family: 'Baloo', sans-serif;
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    color: #ffd700;
+}
+
+h2 {
+    font-family: 'Baloo', sans-serif;
+    color: #ff6b6b;
+}
+
+.price {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 1vh;
+    font-weight: bold;
+}
 
