@@ -26,6 +26,19 @@ body {
     line-height: 1.8vw;
 }
 
+/* Оверлей с soft-light */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    mix-blend-mode: soft-light;
+    pointer-events: none;
+    z-index: 1000;
+}
+
 .arrows {
     width: 41vw;
     position: absolute;
@@ -50,6 +63,37 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(25deg);
+    animation: shineEffect 5s infinite;
+    pointer-events: none;
+}
+
+@keyframes shineEffect {
+    0% {
+        left: -50%;
+    }
+    20% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 
 /* Общие стили для блоков */
@@ -314,8 +358,8 @@ body {
     display: block;
     position: absolute;
     top: -5%;
-    left: -20%;
-    width: 140%;
+    left: -25%;
+    width: 150%;
     height: 100%;
     z-index: -1;
     border-radius: 50%;
