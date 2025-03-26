@@ -26,6 +26,13 @@ body {
     line-height: 1.8vw;
 }
 
+.arrows {
+    width: 41vw;
+    position: absolute;
+    bottom: 51.2vw;
+    left: 18.3%;
+}
+
 .yellow {
     color: #fbbf64;
 }
@@ -97,11 +104,29 @@ body {
     margin-bottom: 0.2vw;
 }
 
+.waffle-img {
+    position: absolute;
+    top: -7.4vw;
+    right: 1.3vw;
+    transform: translateX(100%);
+    width: 13.2vw;
+}
 .waffle-price {
     position: absolute;
-    top: 0;
+    top: -1vw;
     right: -11vw;
     transform: translateX(100%);
+    font-size: 1.6vw;
+}
+
+.waffle-price-item {
+    display: inline-block;
+    font-size: 3.3vw;
+    margin-top: 0.2vw;
+}
+
+.waffle-price-unit {
+    font-size: 2.3vw;
 }
 
 .waffle-title:before {
@@ -118,7 +143,7 @@ body {
 }
 /* Гонконгская вафля */
 .waffle {
-    top: 14.5vw;
+    top: 15.5vw;
     left: 7.7vw;
 }
 
@@ -128,11 +153,16 @@ body {
     color: #1c293c;
     background-color: #fff;
     width: fit-content;
+    font-size: 2.3vw;
+}
+
+.price-unit {
+    font-size: 1.7vw;
 }
 
 /* Мороженое */
 .icecream {
-    top: 27vw;
+    top: 27.9vw;
     left: 7.7vw;
 }
 
@@ -148,12 +178,13 @@ body {
 }
 
 .toppings-title {
+    margin-top: 1.1vw;
     text-decoration: underline;
 }
 
 /* Наполнители */
 .fillings {
-    top: 27vw;
+    top: 27.9vw;
     left: 26vw;
 }
 
@@ -292,3 +323,5 @@ body {
 .underline {
     text-decoration: underline;
 }
+
+
