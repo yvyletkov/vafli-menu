@@ -26,6 +26,10 @@ body {
     line-height: 1.9vw;
 }
 
+.yellow {
+    color: #fbbf64;
+}
+
 .background {
     position: absolute;
     top: 0;
@@ -44,8 +48,6 @@ body {
 /* Общие стили для блоков */
 .item {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Заголовок */
@@ -61,16 +63,21 @@ body {
     text-align: center;
 }
 
-.title {
+.subtitle {
+    font-size: 2.34vw;
+}
 
+.gong-kong-title {
+    font-size: 2.34vw;
+    letter-spacing: -0.17vw;
 }
 /* Гонконгская вафля */
 .gong-kong {
-    top: 15vw;
-    left: 5vw;
-    width: 30vw;
-    background-color: rgba(128, 30, 30, 0.5);
+    top: 12vw;
+    left: 7.7vw;
 }
+
+
 
 .price {
     margin-top: 1vw;
@@ -80,43 +87,53 @@ body {
 /* Мороженое */
 .icecream {
     top: 27vw;
-    left: 5vw;
+    left: 7.7vw;
+}
+
+.icecream-title {
+    text-decoration: underline;
+    color: #fbbf64;
 }
 
 /* Топинги */
 .toppings {
     top: 43vw;
-    left: 5vw;
+    left: 7.7vw;
+}
+
+.toppings-title {
+    text-decoration: underline;
 }
 
 /* Наполнители */
 .fillings {
-    top: 38vw;
-    left: 32vw;
+    top: 27vw;
+    left: 26vw;
 }
+
+.fillings-title {
+    text-decoration: underline;
+}
+
 /* Кофе и Какао */
 .coffee {
-    top: 15vw;
-    right: 5vw;
-    overflow: auto;
+    top: 11vw;
+    left: 59.6vw;
 }
 /* Чай */
 .tea {
-    top: 52vw;
-    right: 25vw;
-    background-color: rgba(128, 30, 30, 0.5);
+    top: 28vw;
+    left: 59.6vw;
 }
 
 /* Милкшейк */
 .milkshake {
-    top: 65vw;
-    right: 25vw;
-    background-color: rgba(128, 30, 30, 0.5);
+    top: 34vw;
+    left: 59.6vw;
 }
 
 /* Мороженое отдельно */
 .extra-ice {
-    top: 52vw;
-    right: 5vw;
-    background-color: rgba(128, 30, 30, 0.5);
+    top: 43vw;
+    left: 59.6vw;
 }
