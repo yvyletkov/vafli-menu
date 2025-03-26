@@ -161,5 +161,43 @@
             <p class="price">130<span class="price-unit"> руб/шарик</span></p>
         </div>
     </div>
+
+    <script>
+        function toggleFullScreen() {
+            if (!document.fullscreenElement && 
+                !document.mozFullScreenElement && 
+                !document.webkitFullscreenElement && 
+                !document.msFullscreenElement) {
+                // Переход в полноэкранный режим
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) {
+                    document.documentElement.msRequestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+            } else {
+                // Выход из полноэкранного режима
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+            }
+        }
+
+        function handleClick() {
+            toggleFullScreen();
+        }
+
+        // Добавление обработчика события клика для всего документа
+        document.addEventListener('click', handleClick, false);
+    </script>
 </body>
 </html> 
