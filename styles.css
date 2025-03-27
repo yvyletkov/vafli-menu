@@ -80,15 +80,15 @@ body {
         rgba(255, 255, 255, 0) 100%
     );
     transform: rotate(25deg);
-    animation: shineEffect 5s infinite;
+    animation: shineEffect 8s infinite;
     pointer-events: none;
 }
 
 @keyframes shineEffect {
     0% {
-        left: -50%;
+        left: -100%;
     }
-    20% {
+    30% {
         left: 150%;
     }
     100% {
