@@ -207,7 +207,7 @@ body {
     right: 1.3vw;
     transform: translateX(100%);
     width: 13.2vw;
-    animation: waffleAnimation 8s infinite;
+    animation: waffleAnimation 6s infinite;
     transform-origin: center center;
 }
 
