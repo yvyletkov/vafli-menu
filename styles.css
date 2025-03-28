@@ -235,6 +235,25 @@ body {
     right: -11vw;
     transform: translateX(100%);
     font-size: 1.6vw;
+    animation: priceWiggle 8s ease-in-out infinite;
+}
+
+@keyframes priceWiggle {
+    0%, 100% {
+        transform: translateX(100%) translateY(0) rotate(0deg);
+    }
+    20% {
+        transform: translateX(100.5%) translateY(-0.3vw) rotate(1deg);
+    }
+    40% {
+        transform: translateX(99.7%) translateY(0.1vw) rotate(-0.5deg);
+    }
+    60% {
+        transform: translateX(100.3%) translateY(0.3vw) rotate(0.8deg);
+    }
+    80% {
+        transform: translateX(99.5%) translateY(-0.1vw) rotate(-1deg);
+    }
 }
 
 .waffle-price-item {
