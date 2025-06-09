@@ -211,6 +211,50 @@ body {
     transform-origin: center center;
 }
 
+
+.lemonades {
+    position: relative;
+    width: fit-content;
+    top: 48.5vw;
+    left: 26vw;
+}
+
+.lemonades-img {
+    width: 20vw;
+    animation: lemonadeAnimation 4s infinite;
+    transform-origin: center center;
+}
+
+.lemonades-price {
+    position: absolute;
+    top: 0.8vw;
+    right: -8.2vw;
+    font-size: 3.3vw;
+}
+
+.lemonades-price span {
+    display: block;
+    font-size: 1.4vw;
+}
+
+@keyframes lemonadeAnimation {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.07) rotate(3deg);
+    }
+    50% {
+        transform: scale(1) rotate(0deg);
+    }
+    75% {
+        transform: scale(1.07) rotate(-3deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
 @keyframes waffleAnimation {
     0% {
         transform: translateX(100%) scale(1) rotate(0deg);
